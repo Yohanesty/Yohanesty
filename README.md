@@ -7,7 +7,7 @@
 ## Start Here · 3-minute Portfolio Route
 
 1. **[Application Architecture](https://github.com/Yohanesty/financial-application-architecture-portfolio)** — 분산 Application 통합, Legacy Interface 유지, Runtime/Resource Isolation
-2. **[Bulk Document Export & Delivery](https://github.com/Yohanesty/financial-application-architecture-portfolio/blob/main/docs/bulk-document-export.md)** — 최대 10,000건 등록, Request 추적, 장시간 Job, 분할 Archive, 전체 다운로드 설계
+2. **[Bulk Document Export & Delivery](https://github.com/Yohanesty/bulk-document-export-portfolio)** — 최대 10,000건 등록, Request 추적, 장시간 Job, 분할 Archive, 전체 다운로드 설계
 3. **[Financial E-Document Gateway](https://github.com/Yohanesty/financial-edoc-gateway-portfolio)** — Java/Netty 기반 금융 Integration Modernization
 
 이 세 문서만 보면 **Architecture 판단 → 대량처리 Backend → 전문/네트워크 Integration 구현** 순으로 핵심 경험을 빠르게 확인할 수 있습니다.
@@ -34,7 +34,7 @@ Legacy native/socket 기반 전자문서 수신 구조를 Java/Netty 기반으�
 
 ## Backend & Integration
 
-### [Bulk Document Export & Delivery](https://github.com/Yohanesty/financial-application-architecture-portfolio/blob/main/docs/bulk-document-export.md)
+### [Bulk Document Export & Delivery](https://github.com/Yohanesty/bulk-document-export-portfolio)
 
 Spring 4 / MyBatis / Oracle 기반 대량 문서 조회·출고 흐름을 Architecture 관점으로 정리한 사례입니다.
 
@@ -55,7 +55,7 @@ Legacy Spring Web 인증 흐름에 TOTP 기반 MFA를 확장한 인증 고도화
 - 폐쇄망 배포와 운영 절차 고려
 - 인증 실패 / 예외 처리 분리
 
-### [JWT + Redis Image Viewer Portfolio](https://github.com/Yohanesty/jwt-redis-image-viewer-portfolio-)
+### [JWT + Redis Image Viewer Portfolio](https://github.com/Yohanesty/jwt-redis-image-viewer-portfolio)
 
 JWT와 Redis를 활용해 외부 이미지 조회 세션과 접근 범위를 제어한 Backend Integration 사례입니다.
 
