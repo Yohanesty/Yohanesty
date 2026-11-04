@@ -18,7 +18,7 @@
 
 분산 Application을 기능 책임 중심으로 통합하고, Legacy Interface를 유지하면서 Configuration과 Runtime Isolation으로 업무 차이와 장애 범위를 분리한 Architecture Case Study입니다.
 
-- 52개 진입점 → 4개 업무 영역 재구성
+- 52개 처리 진입점 → 4개 기능 경계 재설계 및 통합 개발 진행 중
 - 분산 중계 수신 → 공통 Receive Pipeline 표준화
 - Web / Reverse Proxy 기반 Legacy Interface Compatibility
 - Transaction / Resource Isolation / CI Artifact 검증
@@ -50,19 +50,16 @@ Spring 4 / MyBatis / Oracle 기반 대량 문서 조회·출고 흐름을 Archit
 
 Legacy Spring Web 인증 흐름에 TOTP 기반 MFA를 확장한 인증 고도화 사례입니다.
 
-- 기존 ID/PW 인증 흐름 유지
-- TOTP 2차 인증
-- 폐쇄망 배포와 운영 절차 고려
-- 인증 실패 / 예외 처리 분리
+- Java 8 / Spring 4 / Spring Security 기반 기존 ID/PW·IP 제한 유지
+- AuthenticationProvider 확장을 통한 TOTP 2단계 인증 운영 적용
 
 ### [JWT + Redis Image Viewer Portfolio](https://github.com/Yohanesty/jwt-redis-image-viewer-portfolio)
 
 JWT와 Redis를 활용해 외부 이미지 조회 세션과 접근 범위를 제어한 Backend Integration 사례입니다.
 
-- JWT Signature / Expiration / Audience 검증
-- Redis 기반 Viewer Session
-- 이미지 목록 / Streaming 권한 일관성
-- 서버 측 세션 삭제를 통한 즉시 접근 차단 개념
+- JWT·Redis 기반 외부 이미지 조회 Viewer 연계
+- 이미지 목록 조회 및 Streaming
+- 접근범위·세션 관리 구조 적용
 
 ## Operations & Observability
 
@@ -75,12 +72,6 @@ JWT와 Redis를 활용해 외부 이미지 조회 세션과 접근 범위를 제
 - Template / Macro / LLD 표준화
 - 조건부 Auto-Recovery
 - 운영 검증 Checklist
-
-## Earlier Development
-
-### [Android Development Portfolio](https://github.com/Yohanesty/android-development-portfolio)
-
-Android 기반 문서관리 Prototype과 서버 API 연계 경험을 일반화해 정리한 초기 개발 Portfolio입니다.
 
 ## Engineering Principles
 
