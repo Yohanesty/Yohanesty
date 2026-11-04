@@ -4,6 +4,14 @@
 
 주요 관심 영역은 **Legacy Modernization, Application Consolidation, Integration Architecture, Reliability / Operations**입니다.
 
+## Start Here · 3-minute Portfolio Route
+
+1. **[Application Architecture](https://github.com/Yohanesty/financial-application-architecture-portfolio)** — 분산 Application 통합, Legacy Interface 유지, Runtime/Resource Isolation
+2. **[Bulk Document Export & Delivery](https://github.com/Yohanesty/financial-application-architecture-portfolio/blob/main/docs/bulk-document-export.md)** — 최대 10,000건 등록, Request 추적, 장시간 Job, 분할 Archive, 전체 다운로드 설계
+3. **[Financial E-Document Gateway](https://github.com/Yohanesty/financial-edoc-gateway-portfolio)** — Java/Netty 기반 금융 Integration Modernization
+
+이 세 문서만 보면 **Architecture 판단 → 대량처리 Backend → 전문/네트워크 Integration 구현** 순으로 핵심 경험을 빠르게 확인할 수 있습니다.
+
 ## Architecture
 
 ### [Financial Application Architecture Portfolio](https://github.com/Yohanesty/financial-application-architecture-portfolio)
@@ -23,6 +31,18 @@ Legacy native/socket 기반 전자문서 수신 구조를 Java/Netty 기반으�
 - Transport / Validation / Business Logic 분리
 - 오류 이력 및 재처리
 - 비동기 Downstream 처리
+
+## Backend & Integration
+
+### [Bulk Document Export & Delivery](https://github.com/Yohanesty/financial-application-architecture-portfolio/blob/main/docs/bulk-document-export.md)
+
+Spring 4 / MyBatis / Oracle 기반 대량 문서 조회·출고 흐름을 Architecture 관점으로 정리한 사례입니다.
+
+- CSV / Excel / JSON 최대 10,000건 등록
+- REQUEST_KEY 기반 작업 추적
+- 장시간 Search / Convert / Archive Pipeline
+- 상태 / 결과 파일 수 / 다운로드 API 분리
+- 실측 결과를 근거로 불필요한 비동기 등록 재설계를 보류
 
 ## Backend & Security
 
